@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function power(val, pow) {
+		if (pow>1){
+			return (val*power(val, pow-1));
+		}
+		else if(pow==1){
+			return val;
+		}
+		else if(pow==0){
+			return 1;
+		}
+		else{
+			return NaN;
+		}
+	}
+	var a = +prompt('Введите основание степени: ');
+	var b = +prompt('Введите показатель степени: ');
+	if (isNaN(power(a,b))){
+		alert('Показатель степени должен быть целым и неотрицательным числом. Перезагрузите страницу и попробуйте другие значения.');
+	}
+	else{
+		alert('Резульат вычислений: '+power(a,b));
+	}
+
+</script>

@@ -1,0 +1,62 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//var x = 7;
+//var y = 5;
+
+function sum(x, y)
+{
+   return x + y;
+}
+function subtract(x, y)
+{
+   return x - y;
+}
+function multiplication(x, y)
+{
+   return x * y;
+}
+function division(x, y)
+{
+   return x / y;
+}
+
+add = sum(7, 5);
+document.write("7 + 5 = " + add + "<br />");
+
+diff = subtract(7, 5);
+document.write("7 - 5 = " + diff + "<br />");
+
+product = multiplication(7, 5);
+document.write("7 * 5 = " + product + "<br />");
+
+div = division(7, 5);
+document.write("7 / 5 = " + div + "<br />");
+
+function mathOperation(arg1, arg2, operation){
+    			switch(operation){
+       				 case 'сложение':
+           				 return sum(arg1, arg2);
+           				 break;
+       				 case 'вычитание':
+           				 return subtract(arg1, arg2);
+            			 break;
+        			 case 'деление':
+                      	 return division(arg1, arg2);
+            			 break;
+       				 case 'умножение':
+           				 return multiplication(arg1, arg2);
+            			 break;
+   				}
+		}
+		
+operationSum = mathOperation(7, 9, 'сложение');
+document.write("operationSum = " + operationSum + "<br />");
+
+operationDiv = mathOperation(21, 7, 'деление');
+document.write("operationDiv = " + operationDiv + "<br />");
+
+</script>
+
+
+
+
