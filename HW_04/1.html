@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var a = parseInt(prompt('Введите число от 0 до 999: '));
+	function divide(x){
+		var digit = {};
+		if(isNaN(x) || x < 0 || x > 999){
+			console.log('Введено неверное число! Перезагрузите страницу и попробуйте снова.');
+			return digit;
+		}
+		else if(parseInt(x/10) > 0){
+			if(parseInt(x/100) > 0){
+				digit.hundreds = parseInt(x/100);
+				x = x%100;
+			}
+			digit.tens = parseInt(x/10);
+			x = x%10;
+		}
+		digit.units = parseInt(x);
+		return digit;
+	}
+	console.log(divide(a));
+
+</script>
