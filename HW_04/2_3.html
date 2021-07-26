@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+let basket = [
+            {
+                product: "pear",
+                price: 10
+            },
+            {
+                product: "melon",
+                price: 11
+            },
+            {
+                product: "apple",
+                price: 5
+            },
+            {
+                product: "banana",
+                price: 7
+            }
+        ];
+        let basketPrice = 0;
+        for (let prod of basket){
+            console.log("Товар " + prod.product + " стоит: " + prod.price);
+        }
+		
+function countBasketPrice(basket) {
+    let funBasketPrice = 0;
+    for (let prod of basket){
+        funBasketPrice += prod.price;
+    }
+    return funBasketPrice;
+}
+
+    console.log("Стоимость корзины: " + countBasketPrice(basket) + " у.е.");
+</script>
